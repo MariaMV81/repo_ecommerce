@@ -1,0 +1,123 @@
+/*variables*/
+:root{
+    /*colores*/
+    --primario:rgb(126, 153, 28);
+    --primario-claro:hsl rgb(136, 180, 121);
+    --primario-oscuro:hsl rgb(14, 22, 8);
+    --negro:black;
+    --blanco: white;
+    --gris:#cacaca;
+    /*tamaño de texto*/
+    --texto-base: 16px;
+    --h1: 3.052rem;
+    --h2: 2.441rem;
+    /*espacios*/
+    --s:8px;
+    --m:16px;
+    --l:24px;
+}
+
+section{
+    width: 100vw; /*para que ocupe todo el ancho de la pantalla*/
+    height: 75vh; /*altura*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../imagen/fondo-verde-productos.jfif);
+    background-size: cover; /*personalizar el fondo (la imagen)*/
+    background-position: center;/* lo centramos, para que siempre quede centrado*/
+}
+
+
+.encabezado-productos{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-article{
+    display: flex;    
+}
+.card{
+
+    border-radius: 16px;
+    border-color: black;
+    display: inline-flex;
+    width: auto;
+    margin: auto;
+    padding: 20px, 20px;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+h3.cardtitle{
+    
+    text-align: center;
+
+}
+
+div .cardspan{
+
+    text-align: center;
+    color: var(--negro);
+}
+
+.price.group{
+
+    text-align: center;
+}
+
+.card figure{
+
+    overflow: hidden;
+    max-width: 100%;
+
+}
+
+.card figure image{
+
+    max-width: 100%;
+}
+/* Estrellas*/
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;/* para asignar los valores 1- 5 pero que no aparezcan en pantalla y botones de radio*/
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;/*rtl es de derecha a izquierda*/
+    unicode-bidi: bidi-override;/*bidi de bidireccional*/
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: var(--primario-claro);/*cuando pasas por encima de las etiquetas label(estrellas ) estas cambian de color*/
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: var(--primario-claro); /*Al marcar el botón de radio ( radio:checked ) 
+    todas las etiquetas <label> que le preceden ( ~ ) se vuelven color verde*/
+  }

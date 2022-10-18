@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malospelos</title>
+    <link rel="stylesheet" href="/ECOMMERCE RELEEVANT/CSS/index.css" />
+    <link rel="stylesheet" href="/ECOMMERCE RELEEVANT/CSS/style.css" />
+  </head>
+
+  <body>
+    <!--header representa un grupo de ayudas introductorias o de navegación.
+       Puede contener algunos elementos de encabezado, así como también un logotipo,
+        un formulario de búsqueda, un nombre de autor y otros componentes.-->
+    <header class="container"><!--container es una clase de contenedor principal donde va a tener un ancho maximo-->
+        <div class="container_header-inner">
+            <div class="header-inner">
+                <img src="../imagen/logo-removebg-preview.png"  class="logo" alt="logocabezapelos" style="float: left" width="100"/>
+                <h1 class="titulo-malospelos">Malospelos</h1>
+            </div>
+            <div>
+                <input class="buscador" placeholder=" Buscar producto " name="micarrito"/>
+                <a class="button" href="micarrito.html" target="_blank">Carrito <span class="numerocarro">3</span></a>
+            </div>
+        </div>
+           
+            <nav class="container-menu"><!--nav está destinado sólo para el bloque principal de enlaces de navegación. Un documento puede tener varios elementos <nav> -->
+                <div class="menu">   
+                    <ul>
+                        <li><a href="../HTML/Productos.html">Todos los productos</a></li>
+                        <li><a href="../HTML/SobreNosotros.html"> Sobre nosotros</a></li>
+                        <li><a href="../HTML/Contactos.html">Contactos</a></li>
+                        <li><a href="../HTML/gadgets.html">Gadget</a></li>
+                        <li><a href="../HTML/Ofertas.html">Ofertas</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Pedidos</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </di>
+            </nav>
+        
+    </header>
+
+        <div class="wrap">
+            <div class="wrap-texto">
+                <h1>Las mejores OFERTAS de Octubre</h1>
+                <h4>Consigue ahora los mejores productos del store</h4>
+                <a href="#" class="button"> Ver ofertas ahora</a>
+            </div>
+        </div>
+
+        <section class="formulario container">
+            <div class="iniciarsesion">
+                <h2>Iniciar sesión</h2>
+                <p>Accede con tus datos anteriores</p>
+                <form>
+                    <div class="input-button">
+                        <div>
+                            <input type="email" placeholder="email" name="email"/>
+                        </div>
+                        <div>
+                            <input type="password" placeholder="contraseña" name="contraseña"/>
+                        </div>
+                        <div> 
+                            <button class="button">Iniciar sesión</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="registrarse">
+                <h2>Registrate</h2>
+                <p>Crea una cuenta en Malospelos</p>
+                <p>para conseguir tu primer descuento como cliente</p>
+                <form>
+                    <div class="input-button2">
+                        <div>
+                            <input type="text" placeholder="nombre" name="nombre-apellido" />
+                            <input type="text" placeholder="apellidos" name="nombre-apellido"/>
+                        </div>
+                            <input type="email" placeholder="email" name="email" />
+                            <input type="password" placeholder="contraseña" name="contraseña" />
+                            <button class="button">Crear cuenta ahora</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+            <div class="iconos">
+                <div>
+                    <img src="iconos/pago.png" alt="iconopago" width="50" />
+                </div>
+                <div>
+                    <strong>Pago seguro</strong>
+                    <p><strong>200% garantizado</strong></p>
+                </div>
+                <div>
+                    <img src="iconos/envio.png" alt="iconoenvio" width="50" />
+                </div>
+                <div>
+                    <strong> Gratis</strong>
+                    <p><strong> en pedidos de más de 200€</strong></p>
+                </div>
+                <div>
+                    <img src="iconos/check.png" alt="iconocheck" width="50" />
+                </div>
+                <div>
+                    <strong>2 años de garantía</strong>
+                    <p><strong>en todos los badgets</strong></p>
+                </div>
+                <div>
+                    <img src="iconos/ofertas.png" alt="iconoofertas" width="50" />
+                </div>
+                <div>
+                    <strong>Ofertas únicas</strong>
+                    <p><strong>Precios de mayoristas</strong></p>
+                </div>
+            </div>
+  </body>
+  <!--pié de página-->
+  <footer>
+        <div class="container-footer">
+            <div class="footer1"> 
+                  <div class="footer-logo">
+                      <img src="../imagen/logo-removebg-preview.png" alt="imagencabezapelo" width="50" height="50"/>
+                      <h1 class="titulo-malospelos">Malospelos</h1>
+                  </div>
+                  <div class="footer1condiciones">
+                      <div>
+                          <small><p>Centro de Ayuda</p>
+                          <p>Servicio al consumidor</p>
+                          <p>Escríbenos</p>
+                          <p>Servicio telefónico</p></small>
+                      </div>
+                      <div>
+                          <small><p><a href="politicadeprivacidad.html">Política de privacidad</a></p>
+                          <p>Condiciones de compra</p>
+                          <p>Opiniones de clientes</p>
+                          <p>Aviso de privacidad y cookies</p></small>
+                      </div>
+                  </div>
+            </div>
+            <div class="footer2">
+                  <h4>Únete a muestra new letter y recibe ofertas diarias</h4>
+                      <div class="footer-formulario">
+                          <form>
+                              <input type="email" placeholder="introduce tu email" />
+                              <button>Suscribirme</button>
+                              <p><input type="checkbox" id="politica de privacidad" value="politica de privacidad" name="politicadeprivacidad"/>
+                              <small>Acepto la <a href="../HTML/politicadeprivacidad.html">política de privacidad</a>de esta web</small></p>
+                          </form>
+                      </div>
+                      <div class="redes">
+                          <h4>Síguenos en redes</h4>
+                          <img src="../HTML/iconos/facebook.png" alt="iconofacebook" width="25" height="25"/>
+                          <img src="../HTML/iconos/youtube.png" alt="iconoyoutube" width="25" height="25"/>
+                          <img src="../HTML/iconos/twitch.png" alt="iconotwitch" width="25" height="25"/>
+                          <img src="../HTML/iconos/insta.png " alt="iconoinsta"  width="25" height="25"/>
+                      </div>
+            </div>
+        </div>
+  </footer>
+</html>

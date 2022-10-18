@@ -1,0 +1,336 @@
+
+ /*variables*/
+:root{
+    /*colores*/
+    --primario:rgb(126, 153, 28);
+    --primario-claro:rgb(136, 180, 121);
+    --primario-oscuro:rgb(43, 68, 25);
+    --negro:black;
+    --blanco: white;
+    --gris:#cacaca;
+    /*tamaño de texto*/
+    --texto-base: 16px;
+    --h1: 3.052rem;
+    --h2: 2.441rem;
+    /*espacios*/
+    --s:8px;
+    --m:16px;
+    --l:24px;
+}
+
+body {
+    
+    font-family: 'Roboto', sans-serif;
+    max-width: 100;
+}
+
+h1{
+    
+    margin-top: 0px;
+    font-family:'Indie Flower', cursiva; 
+    font-size: var(--h1);
+}
+
+h2{
+    margin-top: 0px;
+    font-family:'Indie Flower', cursiva ;
+    font-size: var(--h2);
+    color:var(--negro);
+}
+ 
+a{
+
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+
+    color: var(--gris);
+}/*Si la pseudo-clase :hover se aplica al enlace, 
+la propiedad padding se debería aplicar al enlace para que el cambio de color se aplique a toda la opción del menú.*/
+
+.container{
+
+    margin: 0 auto;
+    max-width: 992px;
+}
+    
+.titulo-malospelos {
+
+    margin: 0px;
+    font-size:var(--h1);
+    color:rgb(126, 153, 28);
+    font-family: 'Indie Flower', cursiva;
+
+}
+
+.logo {
+
+    max-width: 240px;
+
+}
+
+.container_header-inner {
+
+    background-color: rgba(126, 153, 28, 0.349) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.header-inner {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container-menu{
+    display: flex;
+    justify-content: space-between;
+
+}
+*{margin:0;padding:0;box-sizing:border-box;font-size:0;}
+            
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+    } 
+    nav li{
+    display:inline-block;
+    width:10%;
+    padding:5px 10px;
+    background-color:#000;
+    border:1px solid #000;
+    text-align:center;
+    color:#fff;
+    }
+
+    nav li:hover{
+        background-color:#fff;
+        color:#000;
+        }
+
+.menu{
+
+    display: flex;
+    
+    
+}
+
+.buscador{
+
+    border: 1px solid #5dad1257; /*anchura, estilo y color borde*/
+    padding: var(--s) var(--m); /*espacio alrededor texto*/
+    background-color: #5dad1250; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-align: center;/*alineacion del texto*/
+    text-transform: uppercase; /*especifica el cambio entre mayusculas y minusculas del texto de un elemento*/
+    font-family:'Courier New', Courier, monospace; /*tipografía texto*/
+    border-radius: 16px; /*bordes redondos*/
+
+}
+
+.button {
+    
+    border: none; 
+    padding:var(--s) var(--s);
+    background-color:var(--primario); 
+    color: #ffffff; 
+    text-align: center;
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-family:'Courier New', Courier, monospace; 
+    border-radius: 16px; 
+    margin: 16px;
+
+}
+
+.numerocarro{
+
+    display:inline-block;
+    border: none;
+    padding: var(--s);
+    background-color: #cdebb1;
+    text-align: center;
+    border-radius: 100%;
+    position:relative;
+    color: rgb(25, 53, 8);
+    top: -24px;
+
+} 
+
+.wrap{ /*envoltorio principal donde va a ir la imagen de fondo*/
+
+    width: 100vw; /*para que ocupe todo el ancho de la pantalla*/
+    height: 75vh; /*altura*/
+    display: flex;
+    align-items: center; /*para que quede centrado*/
+    justify-content: center;
+    background: linear-gradient(to left, rgba(218, 219, 217, 0.5), rgba(218, 219, 217, 0.5)) /*esta propiedad se puede poner delante o detras y sirve para el degradado de la imagen*/     
+    ,url(../imagen/fondo-productos-natural.webp) ; /*Aqui ponemos la imagen de fondo con la propiedad background*/
+    background-size: cover; /*personalizar el fondo (la imagen)*/
+    background-position: center;/* lo centramos, para que siempre quede centrado*/
+
+}
+
+.wrap-texto{ /*envoltoriio del texto*/
+
+    color: var(--negro);
+    text-align: center;
+    width: 50%;
+
+} 
+
+input{
+
+    border-style:groove;
+    border-color: var(--primario-claro);
+}
+   
+div,input{
+    
+    box-sizing: border-box;
+
+}
+
+.formulario {
+
+    display: flex;
+    justify-content: space-around;
+    padding: 48px 0px;
+    gap: 24px;
+
+}
+
+.iniciarsesion{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+
+}
+
+.registrarse{
+
+    width: 100%;
+    padding: var(--l);
+    border: 2px solid var(--primario-claro);
+    border-radius: var(--l);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow : 0 8px 16px -12px;
+
+}
+
+.input-button input{
+
+    margin-bottom: 16px;
+
+}
+
+.input-button{
+
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.input-button2 input{
+
+    margin-bottom: 16px;
+
+}
+
+.input-button2{
+
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.iconos{
+
+    padding: var(--s);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.container-footer{
+
+    display: flex;
+    align-items:flex-start;
+    background-color: var(--primario-oscuro);
+
+}
+
+.footer-logo{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footer1{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.footer1condiciones{
+
+    width: 100%;
+    padding: var(--l);
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-around;
+    gap: 24px;
+
+}
+
+
+.footer2{
+
+    width: 100%;
+    padding: var(--l);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.redes{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+}
+
+
+
+
+

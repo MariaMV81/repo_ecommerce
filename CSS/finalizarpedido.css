@@ -1,0 +1,93 @@
+.titulo {
+
+    font-size: 30px;
+    color:rgba(126, 153, 28, 0.74);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
+
+.buscar-producto {
+
+    border: 1px solid #5dad1257; /*anchura, estilo y color borde*/
+    padding: 4px; /*espacio alrededor texto*/
+    background-color: #5dad1250; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-align: center;/*alineacion del texto*/
+    text-transform: uppercase; /*especifica el cambio entre mayusculas y minusculas del texto de un elemento*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*tipografía texto*/
+    border-radius: 25px; /*bordes redondos*/
+        
+}
+
+.boton {
+
+    border: 1px solid #5dad12; 
+    padding: 4px; 
+    background-color:#5dad12 ; 
+    color: #ffffff; 
+    text-align: center;
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    border-radius: 25px; 
+    }
+
+.span.contador{
+    border: 1px solid #355210; 
+    padding: 4px; 
+    background-color: #355210;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 2px;
+    
+}
+
+h2{
+  font: 'Alkalami', serif;
+  font-family: 'Noto Sans Mono', monoespaciado;
+  font-family: 'Open Sans', sans-serif;
+  color:rgba(202, 231, 97, 0.74);
+}
+
+    /*----------- CAJA ----------- */
+.resumen-pedido { 
+    inline-size: 50%;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #ffffff; 
+    font-size: 18px; 
+    font-weight:100; /*ancho de la fuente*/
+    text-align: center; 
+    background: #94cf88; /*color de fondo de la caja*/
+    margin: 0 0 25px; /*el margen de nuestra caja*/ 
+    padding: 20px; /*para que el texto no se quede pegado a la caja le damos aire mediante el padding*/
+    border-radius: 35px; 
+    border: 2px solid #7cca58;
+}
+
+.articulos {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #355210; 
+    font-size: 18px; 
+    font-weight:100;
+    text-align:left; 
+    background: #f7faf7; 
+    margin:15px;  
+    padding: 20px; 
+    border-radius: 35px; 
+    border: 2px solid #f0f1ef;
+}
+
+.boton-proceder-pago {
+    border: 1px solid #5dad12; 
+    padding: 15px; 
+    background-color:#5dad12 ; 
+    text-align: center;
+    text-decoration: none;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    border-radius: 15px; 
+    inline-size: 250px;
+    }
